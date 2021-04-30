@@ -20,6 +20,11 @@ namespace Messenger
     /// </summary>
     class MessengerProgram
     {
+		/// <summary>
+        /// The main program that executes based on command line arguments
+        /// </summary>
+        /// <param name="args"></param>
+        /// <returns></returns>
         static async Task Main(string[] args)
         {
             // test
@@ -294,6 +299,12 @@ namespace Messenger
             // testing ends here
         }
 
+        /// <summary>
+        /// Send a Get HTTP request to the server
+        /// </summary>
+        /// <param name="client">The C# HTTPclient Object</param>
+        /// <param name="uri">The URI to server</param>
+        /// <returns></returns>
         static async Task<string> GetMessage(HttpClient client , string uri)
         {
             string responseBody = "";
@@ -311,6 +322,13 @@ namespace Messenger
             return responseBody;
         }
 
+        /// <summary>
+        /// Send a PUT Http request to the server
+        /// </summary>
+        /// <param name="client">The C# HTTPclient Object</param>
+        /// <param name="uri">The URI to server</param>
+        /// <param name="body">The body of message object</param>
+        /// <returns></returns>
         static async Task<string> PutMessage(HttpClient client, string uri, string body)
         {
             string responseBody = "";
@@ -336,12 +354,26 @@ namespace Messenger
     /// </summary>
     class RSAEncryptor
     {
+        /// <summary>
+        /// Auxiliary method to encrypt message using RSA algorithm
+        /// </summary>
+        /// <param name="M">Message body</param>
+        /// <param name="E">E , public key</param>
+        /// <param name="N">N, public key</param>
+        /// <returns></returns>
         public static BigInteger RSA_Encrypt(BigInteger M, BigInteger E, BigInteger N)
         {
             BigInteger C = BigInteger.ModPow(M, E, N);
             return C;
         }
 
+        /// <summary>
+        /// Auxiliary method to decrypt message using RSA algorithm
+        /// </summary>
+        /// <param name="C">Encrypted message body</param>
+        /// <param name="D">D, private key</param>
+        /// <param name="N">N, private key</param>
+        /// <returns></returns>
         public static BigInteger RSA_Decrypt(BigInteger C, BigInteger D, BigInteger N)
         {
             BigInteger M = BigInteger.ModPow(C, D, N);
@@ -364,6 +396,9 @@ namespace Messenger
         public BigInteger E { get; private set; }
         public BigInteger r { get; private set; }
 
+        /// <summary>
+        /// Start the generating keys
+        /// </summary>
         public void generateKeys()
         {
             // Generating p, q
@@ -383,6 +418,10 @@ namespace Messenger
             D = modInverse(E, r);
         }
 
+        /// <summary>
+        ///  Generate a key with a particular keysize;
+        /// </summary>
+        /// <param name="keysize"></param>
         public void generateKeys(int keysize)
         {
             // Generating p, q
@@ -545,7 +584,11 @@ namespace Messenger
 
         public bool isPublic;
 
-
+        /// <summary>
+        /// KeyParser constructor
+        /// </summary>
+        /// <param name="base64String"></param>
+        /// <param name="isPublic"></param>
         public KeyParser(string base64String, bool isPublic) 
         {
             raw_string = base64String;
@@ -612,6 +655,9 @@ namespace Messenger
 
     }
 
+    /// <summary>
+    /// KeySystem works to manage the client's privateKey and publicKey. It also helps to read and write files.
+    /// </summary>
     class KeySystem
     {
         public PrivateKey privateKey { get; set; }
@@ -622,7 +668,9 @@ namespace Messenger
         string publicKeyFile = "public.key";
         string privateKeyFile = "private.key";
 
-
+        /// <summary>
+        /// KeySystem constructor
+        /// </summary>
         public KeySystem()
         {
             privateKey = new PrivateKey();
@@ -694,6 +742,9 @@ namespace Messenger
         }
     }
 
+    /// <summary>
+    /// PrivateKey class, used to present a private key
+    /// </summary>
     class PrivateKey
     {
         public List<string> emails { get; set; }
@@ -706,6 +757,9 @@ namespace Messenger
         
     }
 
+    /// <summary>
+    /// PublicKey class, used to present a public key
+    /// </summary>
     class PublicKey
     {
         public string email { get; set; }
