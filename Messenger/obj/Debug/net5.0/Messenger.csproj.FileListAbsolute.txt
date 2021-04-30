@@ -1,0 +1,16 @@
+D:\Academic\RIT\4-1\CSCI 251\Project\Project3\Messenger\Messenger\obj\Debug\net5.0\Messenger.csprojAssemblyReference.cache
+D:\Academic\RIT\4-1\CSCI 251\Project\Project3\Messenger\Messenger\obj\Debug\net5.0\Messenger.GeneratedMSBuildEditorConfig.editorconfig
+D:\Academic\RIT\4-1\CSCI 251\Project\Project3\Messenger\Messenger\obj\Debug\net5.0\Messenger.AssemblyInfoInputs.cache
+D:\Academic\RIT\4-1\CSCI 251\Project\Project3\Messenger\Messenger\obj\Debug\net5.0\Messenger.AssemblyInfo.cs
+D:\Academic\RIT\4-1\CSCI 251\Project\Project3\Messenger\Messenger\obj\Debug\net5.0\Messenger.csproj.CoreCompileInputs.cache
+D:\Academic\RIT\4-1\CSCI 251\Project\Project3\Messenger\Messenger\bin\Debug\net5.0\Messenger.exe
+D:\Academic\RIT\4-1\CSCI 251\Project\Project3\Messenger\Messenger\bin\Debug\net5.0\Messenger.deps.json
+D:\Academic\RIT\4-1\CSCI 251\Project\Project3\Messenger\Messenger\bin\Debug\net5.0\Messenger.runtimeconfig.json
+D:\Academic\RIT\4-1\CSCI 251\Project\Project3\Messenger\Messenger\bin\Debug\net5.0\Messenger.runtimeconfig.dev.json
+D:\Academic\RIT\4-1\CSCI 251\Project\Project3\Messenger\Messenger\bin\Debug\net5.0\Messenger.dll
+D:\Academic\RIT\4-1\CSCI 251\Project\Project3\Messenger\Messenger\bin\Debug\net5.0\ref\Messenger.dll
+D:\Academic\RIT\4-1\CSCI 251\Project\Project3\Messenger\Messenger\bin\Debug\net5.0\Messenger.pdb
+D:\Academic\RIT\4-1\CSCI 251\Project\Project3\Messenger\Messenger\obj\Debug\net5.0\Messenger.dll
+D:\Academic\RIT\4-1\CSCI 251\Project\Project3\Messenger\Messenger\obj\Debug\net5.0\ref\Messenger.dll
+D:\Academic\RIT\4-1\CSCI 251\Project\Project3\Messenger\Messenger\obj\Debug\net5.0\Messenger.pdb
+D:\Academic\RIT\4-1\CSCI 251\Project\Project3\Messenger\Messenger\obj\Debug\net5.0\Messenger.genruntimeconfig.cache
